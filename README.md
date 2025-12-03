@@ -1,86 +1,124 @@
+# 📊 Streamlit Data Visualization App
 
-# SalesBot AI Agent 🤖
+A simple and beginner-friendly interactive data visualization app built with Streamlit.
+This app allows users to upload their own dataset or work with a default sample dataset, then create multiple visualizations by selecting columns directly from the UI.
 
-SalesBot is an AI-powered business assistant that reads and analyzes both **structured** (Excel, CSV) and **unstructured** (PDF, TXT) data to generate insights, detect trends, and answer real-world business questions using **OpenAI GPT models**.
+## 🚀 Features
 
----
+📥 Upload your own CSV dataset
 
-##  Features
+📂 Or use a built-in default dataset
 
--  Analyze business data such as revenue, product performance, and sales trends.
--  Extract and process data from multiple sources: Excel, CSV, PDF, and TXT.
--  Perform sentiment analysis on customer feedback using NLP (VADER).
--  Answer custom business queries using GPT-based prompts.
--  Streamlit app for user interaction
+🔍 Automatic detection of numeric and categorical columns
 
----
+✏️ Select columns and row ranges interactively
 
-##  Tech Stack
+## 📊 Multiple visualization types:
 
-- Python
-- Pandas, NumPy, Matplotlib, Seaborn
-- PyPDF2 for PDF reading
-- NLTK for sentiment analysis
-- OpenAI GPT (via API)
-- Streamlit 
+Bar Chart
 
----
+Line Chart
 
-## 📂 Project Structure
+Area Chart
 
-```
-SalesBot-AI-Agent
- ┣ 📄 app.py
- ┣ 📄 customer_feedback_large.csv
- ┣ 📄 sales_transactions_2022_2024.xlsx
- ┣ 📄 market_trends_extended.txt
- ┣ 📄 board_meeting_summary_long.pdf
- ┣ 📄 README.md
-```
+Scatter Plot
 
----
+Box Plot
 
-##  Example Use Cases
+Histogram
 
-- "What is the top-performing product overall?"
-- "Show revenue trends over time."
-- "Summarize customer sentiment from feedback data."
-- "Give highlights from recent board meetings."
+### ⚡ Real-time visualization updates
 
----
+### 🖼 Clean Streamlit-based UI
 
-##  Streamlit App
+## 🧰 Technologies Used
 
-Launch the app using:
+Python 3.x
 
-```bash
+Streamlit
+
+Pandas
+
+NumPy
+
+Matplotlib / Seaborn
+
+
+
+## ▶️ How to Run the App
+1. Clone the repository
+git clone https://github.com/your-username/visualization-app.git
+cd visualization-app
+
+2. Create and activate a virtual environment
+python -m venv venv
+
+
+Windows
+
+.\venv\Scripts\activate
+
+
+Mac/Linux
+
+source venv/bin/activate
+
+3. Install dependencies
+pip install -r requirements.txt
+
+4. Run the Streamlit app
 streamlit run app.py
-```
----
 
-How It Works
+## 📤 Using the App
+1. Uploading a Dataset
 
-1. **Load data**:
-   - Sales transaction data from Excel
-   - Customer feedback from CSV
-   - Market trends from TXT
-   - Board meeting summary from PDF
+Use the sidebar upload box to upload any CSV file.
 
-2. **Analyze & visualize**:
-   - Monthly & quarterly revenue trends
-   - Top products by revenue and units sold
-   - Region-wise revenue contribution
+2. Using the Default Dataset
 
-3. **NLP & Sentiment Analysis**:
-   - VADER sentiment scoring for customer feedback
-   - Classification into Positive, Neutral, Negative
+If no file is uploaded, the app automatically loads a built-in sample dataset.
 
-4. **Conversational AI**:
-   - Business queries answered using OpenAI's GPT-3.5 model
-   - Prompts include data summaries, trends, and key stats
+3. Column Selection
 
----
+Choose:
 
+X-axis column
 
+Y-axis column
 
-> This project is a great example of combining business intelligence, NLP, and AI to support data-driven decision-making.
+Row range (optional)
+
+4. Choose Visualization Type
+
+Pick from:
+
+Bar Chart
+
+Line Chart
+
+Area Chart
+
+Scatter Plot
+
+Box Plot
+
+Histogram
+
+The visualization updates instantly.
+
+## 📝 Example requirements.txt
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+
+## 🛠 Future Enhancements
+
+Add correlation heatmaps
+
+Add color/style customization
+
+Export dashboard as PDF
+
+Add machine learning insights
